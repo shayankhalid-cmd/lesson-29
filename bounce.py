@@ -54,9 +54,10 @@ while not exit:
             sp1.change_color()
         elif event.type == backround_color_change_event:
             change_backround_clolor()
-all_sprites_list.update()
-screen.fill(bg_color)
-all_sprites_list.draw(screen)
-pygame.display.flip()
+    all_sprites_list.update()
+    screen.fill(bg_color)
+    all_sprites_list.draw(screen)
+    pygame.display.flip()
 clock.tick(240)
+
 pygame.quit()
